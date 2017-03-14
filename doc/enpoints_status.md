@@ -229,18 +229,16 @@ HTTP request sent, awaiting response... 404 Not Found
 - [package_autocomplete](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.package_autocomplete)
 
 ```
-$ wget "wget http://www.dati.gov.it/api/3/action/package_autocomplete?q=trasporto&limit=10"
-wget http://www.dati.gov.it/api/3/action/package_autocomplete?q=trasporto&limit=10: Scheme missing.
-mindrones:data mindrones$ wget "http://www.dati.gov.it/api/3/action/package_autocomplete?q=trasporto&limit=10"
---2017-03-14 17:51:56--  http://www.dati.gov.it/api/3/action/package_autocomplete?q=trasporto&limit=10
+$ wget "http://www.dati.gov.it/api/3/action/package_autocomplete?q=trasporto&limit=10"
+--2017-03-14 19:28:48--  http://www.dati.gov.it/api/3/action/package_autocomplete?q=trasporto&limit=10
 Resolving www.dati.gov.it... 89.97.56.30
 Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
 Location: http://www.dati.gov.it/trasporto?limit=10 [following]
---2017-03-14 17:51:56--  http://www.dati.gov.it/trasporto?limit=10
+--2017-03-14 19:28:48--  http://www.dati.gov.it/trasporto?limit=10
 Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
 HTTP request sent, awaiting response... 404 Not Found
-2017-03-14 17:51:57 ERROR 404: Not Found.
+2017-03-14 19:28:49 ERROR 404: Not Found.
 ```
 
 - [format_autocomplete](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.format_autocomplete)
