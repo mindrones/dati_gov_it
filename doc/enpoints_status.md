@@ -2,7 +2,7 @@
 
 I'm doing a first round of endpoints testing to get acquainted with the CKAN API.
 
-I'm using correct parameters (if they're needed) where possible, but where I can't find suitable values (maybe because I can't find any example in data files I downloaded previously) I just test the endpoint without parameters, because if the endpoint exists we get a `400: Bad Request`, otherwise we get a `404: Not Found`.
+I'm using correct parameters (if they're needed) where possible, but where I can't find suitable values (maybe because I can't find any example in data files I downloaded previously) I just test the endpoint without parameters, because if the endpoint exists we get a `400: Bad Request`, otherwise we get a `404: Not Found`, see below.
 
 ## Response examples
 
@@ -20,18 +20,9 @@ Saving to: ‘group_package_show?id=ufficio-statistica’
 group_package_show?id=ufficio-statistica        [   <=>   ]  64.82K  --.-KB/s    in 0.04s
 ```
 
-### Missing endpoint (Response code: `404: Not Found`)
-
-```
-$ wget http://www.dati.gov.it/api/3/action/member_list?id=comune-siena        
---2017-03-14 16:42:17--  http://www.dati.gov.it/api/3/action/member_list?id=comune-siena
-Resolving www.dati.gov.it... 89.97.56.30
-Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
-HTTP request sent, awaiting response... 404 Not Found
-2017-03-14 16:42:18 ERROR 404: Not Found.
-```
-
 ### Working endpoint, bad request (Response code: `400: Bad Request`)
+
+Let's take the example above and remove the parameters:
 
 ```
 $ wget http://www.dati.gov.it/api/3/action/group_package_show
@@ -42,9 +33,22 @@ HTTP request sent, awaiting response... 400 Bad Request
 2017-03-14 17:39:41 ERROR 400: Bad Request.
 ```
 
-## Endpoints responses
+In this case we can infer that the endpoint exists but we're just not calling it correctly (useful when you don't know the right parameters to be used but you need to check the endpoint anyway).
 
-If an endpoint has no notes, it works.
+### Missing endpoint (Response code: `404: Not Found`)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/member_list?id=comune-siena
+--2017-03-14 16:42:17--  http://www.dati.gov.it/api/3/action/member_list?id=comune-siena
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-14 16:42:18 ERROR 404: Not Found.
+```
+
+## Endpoints
+
+Endpoints without a note are currently working.
 
 - [site_read](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.site_read)
 - [package_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.package_list)
