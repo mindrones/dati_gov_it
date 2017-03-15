@@ -334,8 +334,6 @@ HTTP request sent, awaiting response... 404 Not Found
 2017-03-14 18:03:19 ERROR 404: Not Found.
 ```
 
-## TODO
-
 - [task_status_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.task_status_show)
 
 TODO
@@ -443,7 +441,7 @@ HTTP request sent, awaiting response... 404 Not Found
 2017-03-09 13:29:04 ERROR 404: Not Found.
 ```
 
-# TODO
+## TODO
 
 - [activity_detail_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.activity_detail_list)
 - [user_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_activity_list_html)
