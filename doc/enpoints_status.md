@@ -337,15 +337,101 @@ HTTP request sent, awaiting response... 404 Not Found
 ## TODO
 
 - [task_status_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.task_status_show)
+
+TODO
+
 - [term_translation_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.term_translation_show)
+
+TODO
+
 - [get_site_user](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.get_site_user)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/get_site_user
+--2017-03-15 11:20:48--  http://www.dati.gov.it/api/3/action/get_site_user
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:20:48 ERROR 404: Not Found.
+```
+
 - [status_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.status_show)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/status_show
+--2017-03-15 11:18:16--  http://www.dati.gov.it/api/3/action/status_show
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:18:18 ERROR 404: Not Found.
+```
+
 - [vocabulary_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.vocabulary_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/vocabulary_list
+--2017-03-15 11:17:29--  http://www.dati.gov.it/api/3/action/vocabulary_list
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:17:30 ERROR 404: Not Found.
+```
+
 - [vocabulary_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.vocabulary_show)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/vocabulary_show?id=0
+--2017-03-15 11:23:05--  http://www.dati.gov.it/api/3/action/vocabulary_show?id=0
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:23:06 ERROR 404: Not Found.
+```
+
 - [user_activity_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_activity_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/user_activity_list?id=9bcba160-349c-4d14-8a53-d4168349d053
+--2017-03-15 11:04:06--  http://www.dati.gov.it/api/3/action/user_activity_list?id=9bcba160-349c-4d14-8a53-d4168349d053
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:04:06 ERROR 404: Not Found.
+```
+
 - [package_activity_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.package_activity_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/package_activity_list?id=3074974d-b4c7-4df9-809a-d266088de3a3
+--2017-03-15 11:05:04--  http://www.dati.gov.it/api/3/action/package_activity_list?id=3074974d-b4c7-4df9-809a-d266088de3a3
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:05:05 ERROR 404: Not Found.
+```
+
 - [group_activity_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_activity_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/group_activity_list?id=ufficio-statistica
+--2017-03-15 11:06:45--  http://www.dati.gov.it/api/3/action/group_activity_list?id=ufficio-statistica
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:06:46 ERROR 404: Not Found.
+```
+
 - [organization_activity_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_activity_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/organization_activity_list?id=a6bc8e36-122e-4577-820a-cb6a13313b5b
+--2017-03-15 11:07:17--  http://www.dati.gov.it/api/3/action/organization_activity_list?id=a6bc8e36-122e-4577-820a-cb6a13313b5b
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 11:07:17 ERROR 404: Not Found.
+```
+
 - [recently_changed_packages_activity_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.recently_changed_packages_activity_list)
 
 ```
