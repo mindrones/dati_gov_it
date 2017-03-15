@@ -340,11 +340,25 @@ HTTP request sent, awaiting response... 404 Not Found
 
 - [task_status_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.task_status_show)
 
-TODO
+```
+$ wget http://www.dati.gov.it/api/3/action/task_status_show
+--2017-03-15 14:22:59--  http://www.dati.gov.it/api/3/action/task_status_show
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:22:59 ERROR 404: Not Found.
+```
 
 - [term_translation_show](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.term_translation_show)
 
-TODO
+```
+$ wget http://www.dati.gov.it/api/3/action/term_translation_show
+--2017-03-15 14:23:59--  http://www.dati.gov.it/api/3/action/term_translation_show
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:24:00 ERROR 404: Not Found.
+```
 
 - [get_site_user](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.get_site_user)
 
@@ -445,25 +459,160 @@ HTTP request sent, awaiting response... 404 Not Found
 2017-03-09 13:29:04 ERROR 404: Not Found.
 ```
 
+- [activity_detail_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.activity_detail_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/activity_detail_list
+--2017-03-15 14:19:37--  http://www.dati.gov.it/api/3/action/activity_detail_list
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:19:38 ERROR 404: Not Found.
+```
+
+- [user_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_activity_list_html)
+
+TODO? (not quite interesting/useful for data purposes)
+
+- [package_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.package_activity_list_html)
+
+TODO? (not quite interesting/useful for data purposes)
+
+- [group_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_activity_list_html)
+
+TODO? (not quite interesting/useful for data purposes)
+
+- [organization_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_activity_list_html)
+
+TODO? (not quite interesting/useful for data purposes)
+
+- [recently_changed_packages_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.recently_changed_packages_activity_list_html)
+
+TODO? (not quite interesting/useful for data purposes)
+
+- [user_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_follower_count)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/user_follower_count?id=9bcba160-349c-4d14-8a53-d4168349d053
+--2017-03-15 14:26:52--  http://www.dati.gov.it/api/3/action/user_follower_count?id=9bcba160-349c-4d14-8a53-d4168349d053
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:26:53 ERROR 404: Not Found.
+```
+
+- [dataset_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.dataset_follower_count)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/dataset_follower_count?id=3074974d-b4c7-4df9-809a-d266088de3a3
+--2017-03-15 14:27:39--  http://www.dati.gov.it/api/3/action/dataset_follower_count?id=3074974d-b4c7-4df9-809a-d266088de3a3
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:27:40 ERROR 404: Not Found.
+```
+
+- [group_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_follower_count)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/group_follower_count?id=2765d8b6-fdb0-40e2-93c8-b8231848ce5d
+--2017-03-15 14:29:22--  http://www.dati.gov.it/api/3/action/group_follower_count?id=2765d8b6-fdb0-40e2-93c8-b8231848ce5d
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:29:23 ERROR 404: Not Found.
+```
+
+- [organization_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_follower_count)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/organization_follower_count?id=a6bc8e36-122e-4577-820a-cb6a13313b5b
+--2017-03-15 14:30:14--  http://www.dati.gov.it/api/3/action/organization_follower_count?id=a6bc8e36-122e-4577-820a-cb6a13313b5b
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:30:14 ERROR 404: Not Found.
+```
+
+- [user_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_follower_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/user_follower_list?id=9bcba160-349c-4d14-8a53-d4168349d053
+--2017-03-15 14:31:30--  http://www.dati.gov.it/api/3/action/user_follower_list?id=9bcba160-349c-4d14-8a53-d4168349d053
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:31:31 ERROR 404: Not Found.
+```
+
+- [dataset_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.dataset_follower_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/dataset_follower_list?id=3074974d-b4c7-4df9-809a-d266088de3a3
+--2017-03-15 14:32:14--  http://www.dati.gov.it/api/3/action/dataset_follower_list?id=3074974d-b4c7-4df9-809a-d266088de3a3
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:32:15 ERROR 404: Not Found.
+```
+
+- [group_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_follower_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/group_follower_list?id=2765d8b6-fdb0-40e2-93c8-b8231848ce5d
+--2017-03-15 14:33:08--  http://www.dati.gov.it/api/3/action/group_follower_list?id=2765d8b6-fdb0-40e2-93c8-b8231848ce5d
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:33:09 ERROR 404: Not Found.
+```
+
+- [organization_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_follower_list)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/organization_follower_list?id=a6bc8e36-122e-4577-820a-cb6a13313b5b
+--2017-03-15 14:33:58--  http://www.dati.gov.it/api/3/action/organization_follower_list?id=a6bc8e36-122e-4577-820a-cb6a13313b5b
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:33:59 ERROR 404: Not Found.
+```
+
+- [am_following_user](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.am_following_user)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/am_following_user
+--2017-03-15 14:34:49--  http://www.dati.gov.it/api/3/action/am_following_user
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:34:49 ERROR 404: Not Found.
+```
+
+- [am_following_dataset](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.am_following_dataset)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/am_following_dataset
+--2017-03-15 14:35:17--  http://www.dati.gov.it/api/3/action/am_following_dataset
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:35:18 ERROR 404: Not Found.
+```
+
+- [am_following_group](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.am_following_group)
+
+```
+$ wget http://www.dati.gov.it/api/3/action/am_following_group
+--2017-03-15 14:35:35--  http://www.dati.gov.it/api/3/action/am_following_group
+Resolving www.dati.gov.it... 89.97.56.30
+Connecting to www.dati.gov.it|89.97.56.30|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2017-03-15 14:35:36 ERROR 404: Not Found.
+```
+
 ## TODO
 
-- [activity_detail_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.activity_detail_list)
-- [user_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_activity_list_html)
-- [package_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.package_activity_list_html)
-- [group_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_activity_list_html)
-- [organization_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_activity_list_html)
-- [recently_changed_packages_activity_list_html](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.recently_changed_packages_activity_list_html)
-- [user_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_follower_count)
-- [dataset_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.dataset_follower_count)
-- [group_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_follower_count)
-- [organization_follower_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_follower_count)
-- [user_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_follower_list)
-- [dataset_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.dataset_follower_list)
-- [group_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.group_follower_list)
-- [organization_follower_list](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.organization_follower_list)
-- [am_following_user](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.am_following_user)
-- [am_following_dataset](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.am_following_dataset)
-- [am_following_group](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.am_following_group)
 - [followee_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.followee_count)
 - [user_followee_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.user_followee_count)
 - [dataset_followee_count](http://docs.ckan.org/en/latest/api/index.html#ckan.logic.action.get.dataset_followee_count)
